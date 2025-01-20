@@ -7,7 +7,7 @@ print(x)
 x = "Python"
 y = "is"
 z = "awesome"
-print(x, y, z)
+print(x, y, z)#when we separate vars by commas you will always have space between them
 
 
 x = "Python "
