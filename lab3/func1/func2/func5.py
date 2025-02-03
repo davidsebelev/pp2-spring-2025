@@ -76,10 +76,9 @@ movies = [
 }
 ]
 
-def average_imdb(movie_list):
-    if not movie_list:
+def avarage_imdb_by_category(movie_list,category):
+    if not movie_list or not category:
         return 0
-    total_score = sum(movie["imdb"] for movie in movie_list)
-    return total_score/ len(movie_list)
-
-print(average_imdb(movies))
+    category_movies = [movie["imdb"] for movie in movie_list if movie["category"] == category]
+    return sum(category_movies) / len(category_movies)
+print(avarage_imdb_by_category(movies,"Romance"))
