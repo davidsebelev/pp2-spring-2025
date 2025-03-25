@@ -16,5 +16,5 @@ class ElectroCar(Car):
 
 car1 = Car("ms","new")
 car2 = ElectroCar("bmw","old")
-#print(car2.newStart())
+
 car1.start()
